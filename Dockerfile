@@ -4,10 +4,11 @@ COPY pom.xml .
 RUN mvn dependency:go-offline
 COPY src ./src
 RUN mvn clean install -DskipTests
+RUN mvn package -DskipTests
 
 
 FROM openjdk:17-jdk-slim
 WORKDIR /app
-COPY target/phonebook-api-0.0.1-SNAPSHOT.jar /app/
+COPY --from=build /app/target/phonebook-api-0.0.1-SNAPSHOT.jar /app/
 CMD ["java", "-jar", "/app/phonebook-api-0.0.1-SNAPSHOT.jar"]
 EXPOSE 8080

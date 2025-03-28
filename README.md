@@ -73,8 +73,8 @@ This page provides an interactive interface for testing all the endpoints of the
 
 ### Testing the API
 
-Once the application is running, you can test the API using **Postman**, **curl**, or any other API testing tool.
-
+Once the application is running, you can test the API using **Postman**, **curl**, or any other API testing tool.  
+You have in the project postman file 'Phonebook User API.postman_collection' with api examples that can import to your postman
 ## Error Handling
 
 The API uses custom exceptions to handle errors, and it returns appropriate HTTP status codes along with error messages. The most common error responses are:
