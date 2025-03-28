@@ -56,7 +56,7 @@ This page provides an interactive interface for testing all the endpoints of the
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/phonebook-api.git
+   git clone https://github.com/NaorFahima/phonebook-api.git
    ```
 
 2. Navigate to the project directory:
