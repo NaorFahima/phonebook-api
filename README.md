@@ -64,7 +64,8 @@ This page provides an interactive interface for testing all the endpoints of the
    cd phonebook-api
    ```
 
-3. Build and run the application using Docker:
+3. Build and run the application using Docker:  
+   Note - If you don't have docker install in your computer you can install it from here https://www.docker.com/products/docker-desktop/
    ```bash
    docker-compose up --build
    ```
